@@ -151,11 +151,36 @@ body div .nuestras-marcas {
 }
 
 /*soluciones*/
-
-
+.contenido-soluciones {
+    margin: 20px 50px;
+    display: flex;
+    flex-direction: column;
+}
+.solucion {
+    margin: 40px;
+    display: flex;
+    flex-direction: row;
+}
+.solucion img {
+    height: 200px;
+    width: 50%;
+    object-fit: cover;
+}
+.solucion p {
+    padding: 50px 100px;
+}
+.solucion:last-of-type {
+    flex-direction: row-reverse;
+}
+.solucion:last-of-type p {
+    padding-left: 0px;
+}
+.solucion:last-of-type img {
+    padding-right: 100px;
+}
 
 /*integraciones*/
-#main-integracion {
+.contenido-integracion {
     height: 700px;
 }
 
@@ -182,7 +207,7 @@ footer {background-color:azure
 }   
 .contenido-footer {
     display: inline-block;}
-.contenido-footer #enlace-desarrollador a {
+.contenido-footer a {
     text-decoration: none;
     font-weight: bold;
     color: black;
