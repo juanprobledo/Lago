@@ -107,7 +107,7 @@ nav a:visited {
 }
 .card:nth-of-type(2) .card-img-top {
     height: auto;
-    margin: 51px 0px;
+    margin: 43px 0px;
 }
 body div .nuestras-marcas {
     display: inline-block;
@@ -142,13 +142,17 @@ body div .nuestras-marcas {
     align-items: center;
     margin: 40px;
 }
-main img {
+.contenido-nosotros img {
     height: 400px;
     width: auto;
 }
-main p {
+.contenido-nosotros p {
     width: 500px;
 }
+
+/*soluciones*/
+
+
 
 /*integraciones*/
 #main-integracion {
