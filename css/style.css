@@ -21,19 +21,25 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
     font-family: 'Montserrat', sans-serif;
+    color: blue
 }
 
 /* HEADER */
 header {
-    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color:black;
     height: 150px;
     width: 100%;
 }
 
-header .isologotipo {
+.isologotipo {
+    align-items: center;
     margin: 20px;
-    height: 100px;
-    width: 350px;
+    height: 75px;
+    width: 250px;
 } 
 
 nav {
@@ -46,11 +52,15 @@ nav {
 nav ul {
     list-style-type: none;
     position: relative;
-    top: -60px;
 }
 
 nav li {display: inline-block;
 margin: 0px 25px;
+}
+nav a {text-decoration: none;
+}
+nav a:visited {
+   color: none; 
 }
 
 /*BODY*/
