@@ -33,6 +33,7 @@ header {
     background-color:black;
     height: 150px;
     width: 100%;
+    overflow-x: hidden;
 }
 
 .isologotipo {
@@ -71,7 +72,9 @@ nav a:visited {
     top: 0px;
     left:0px;
     width: 100%;
-    height: 100%;
+    height: 500px;
+    object-fit: cover;
+    overflow: hidden;
 }
 .titulo-seccion-soluciones {
     margin: 20px 0px;
@@ -104,30 +107,46 @@ nav a:visited {
 }
 .card:nth-of-type(2) .card-img-top {
     height: auto;
-    margin: 43px 0px;
+    margin: 51px 0px;
 }
 body div .nuestras-marcas {
     display: inline-block;
     margin-left: 100px;
 }
 
-/*nosotros*/
-.contadores-nosotros {
-    display: inline-block;
-    position: relative;
-    left: 400px;
-    padding-left: 50px;
+.seccion-contador{
+    font-weight: bold;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
-.contadores-nosotros img {
-    width: 100px;
-    height: 100px;
 
+.numero-contador{
+    font-size: 60px;
+    margin: 0px 20px;
+    }
+
+.seccion-contador p {
+    font-size: 30px;
+    color: blue;
+    margin: unset;
 }
+
+/*nosotros*/
 .contenido-nosotros {
-    margin: 50px
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 40px;
 }
 main img {
     height: 400px;
+    width: auto;
+}
+main p {
     width: 500px;
 }
 
@@ -159,6 +178,11 @@ footer {background-color:azure
 }   
 .contenido-footer {
     display: inline-block;}
+.contenido-footer #enlace-desarrollador a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
 
 footer div {
     margin: 4px 70px;
