@@ -279,7 +279,10 @@ footer div {
     padding-bottom: 40px;
 }
 
-/* MEDIA QUERY MOBILE*/
+/* MEDIA QUERY MOBILE*/ 
+
+/* Las Paginas 100% responsive son 'Index' (mediante grilla de bootstrap) y 'Soluciones'(utilzando el otro metodo), el resto esta en progreso */
+
 @media (max-width:480px){
 
     /* HEADER */
@@ -348,6 +351,7 @@ footer div {
         height: auto;
         width: 70%;
         object-fit: cover;
+        margin-bottom: 20px;
     }
     .solucion p {
         padding: 0;
@@ -361,9 +365,12 @@ footer div {
         margin: 0px 20px;
     }
     .contenido-footer img{
+        height: 150px;
+        width:auto;
         padding: 20px 0;
     }
     .contenido-footer p{
         text-align: center;
+        font-size: 18px;
     }
 }
