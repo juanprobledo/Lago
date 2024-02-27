@@ -25,10 +25,27 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* HEADER */
+.col-6 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+}
+.container-fluid{
+    margin:0;
+    padding:0;
+}
 header {
     background-color:black;
     height: 150px;
     width: 100%;
+}
+.navbar{
+    --bs-navbar-active-color: blue;
+    --bs-navbar-active-size:16px;
+    --bs-navbar-color: blue;
+    --bs-navbar-toggler-border-color: blue;
+    --bs-navbar-toggler-icon-color: blue;
 }
 .navbar-brand img {
     height: 75px;
@@ -40,8 +57,13 @@ header {
 }
 .navbar-nav .nav-link {
     font-family: 'montserrat', sans-serif;
-    font-size: 35px;
+    font-size: 22px;
     color: blue;
+}
+.navbar-nav .nav-link:hover {
+    font-family: 'montserrat', sans-serif;
+    color: black;
+    background-color: blue;
 }
 .navbar-toggler-icon{
     background-color: blue;
@@ -49,6 +71,7 @@ header {
 .navbar-toggler:hover{
     z-index: 99999999; /* Intentado que el banner quede por detras del menu desplegable */
 }
+
 
 /*BODY*/
 /*index*/
@@ -62,6 +85,10 @@ header {
     overflow: hidden;
     z-index: 1; 
 }
+
+h2{
+    margin: 20px;
+} 
 
 .card {
     display: flex;
@@ -226,6 +253,7 @@ footer {background-color:black;
     color: white;
 }
 .contenido-footer p {
+    font-size: 20px;
     color: white;
 }
 
@@ -236,17 +264,35 @@ footer div {
 
 /* MEDIA QUERY MOBILE*/
 @media (max-width:480px){
-.seccion-soluciones {
-    flex-direction: column;
+    /* HEADER */
+    .navbar-brand {
+        margin: 0;
+    }    
+    .navbar-brand img {
+        height: 75px;
+        width: 200px;
+        padding: unset;
+        margin: 0;
     }
-.contenido-nosotros {
-    flex-direction: column;
-    justify-content: unset;
-    margin: unset;
-}
-.contenido-nosotros p {
-    text-align: center;
-    max-width: 400px;
-    margin-bottom: unset;
-}
+    .navbar-nav .nav-link{
+    font-size: 16px;
+    }
+
+    /* INDEX */
+    
+
+
+    /* FOOTER */
+    .contenido-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 20px;
+    }
+    .contenido-footer img{
+        padding: 20px 0;
+    }
+    .contenido-footer p{
+        text-align: center;
+    }
 }
