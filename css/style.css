@@ -237,7 +237,7 @@ body div .nuestras-marcas {
 .contacto-container{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     padding: 30px;
 }
 .container-nivel2{
@@ -256,6 +256,11 @@ body div .nuestras-marcas {
     height: 50px;
     width: 50px;
     margin-right: 20px;
+}
+.iframe-ubicacion{
+    height: 450px;
+    width: auto;
+    margin: 20px;
 }
 
 
@@ -377,6 +382,25 @@ footer div {
         left: 25px;
         width: 300px;
     }
+    /* CONTACTO */
+    .contacto-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    .contacto-subcontainer-item{
+        margin: 10px;
+    }
+    .contacto-subcontainer-item img{
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+    }
+    .iframe-ubicacion-container{
+        margin-bottom: 30px;
+    }
+
     /* FOOTER */
     .contenido-footer {
         display: flex;
