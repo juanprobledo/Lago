@@ -26,43 +26,28 @@ h1,h2,h3,h4,h5,h6 {
 
 /* HEADER */
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     background-color:black;
     height: 150px;
     width: 100%;
-    overflow-x: hidden;
 }
-
-.isologotipo {
-    align-items: center;
-    margin: 20px;
+.navbar-brand img {
     height: 75px;
     width: 250px;
-} 
-
-nav {
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    left: 360px;
+    object-fit: cover;
 }
-
-nav ul {
-    list-style-type: none;
-    position: relative;
+.bg-body-tertiary {
+    --bs-bg-opacity: 0;
 }
-
-nav li {display: inline-block;
-margin: 0px 25px;
-}
-nav a {text-decoration: none;
+.navbar-nav .nav-link {
+    font-family: 'montserrat', sans-serif;
+    font-size: 35px;
     color: blue;
 }
-nav a:visited {
-   color: blue; 
+.navbar-toggler-icon{
+    background-color: blue;
+}
+.navbar-toggler:hover{
+    z-index: 99999999; /* Intentado que el banner quede por detras del menu desplegable */
 }
 
 /*BODY*/
@@ -75,39 +60,24 @@ nav a:visited {
     height: 500px;
     object-fit: cover;
     overflow: hidden;
+    z-index: 1; 
 }
-.titulo-seccion-soluciones {
-    margin: 20px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 
-}
-.seccion-soluciones {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 .card {
     display: flex;
     flex-direction: column;
-    justify-items: center;
-    align-content: center;
-    margin: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
     height: 500px;
-    width: 600px;
+    width: 350px;
     overflow: hidden;
 }
 .card-img-top {
     height: 300px;
-    width: 100%;
-    object-fit: cover;
+    width: 300px;
+    object-fit: contain;
     padding: 20px;
-}
-.card:nth-of-type(2) .card-img-top {
-    height: auto;
-    margin: 43px 0px;
 }
 body div .nuestras-marcas {
     display: inline-block;
@@ -265,7 +235,7 @@ footer div {
 }
 
 /* MEDIA QUERY MOBILE*/
-@media (max-width:480px){}
+@media (max-width:480px){
 .seccion-soluciones {
     flex-direction: column;
     }
@@ -278,4 +248,5 @@ footer div {
     text-align: center;
     max-width: 400px;
     margin-bottom: unset;
+}
 }

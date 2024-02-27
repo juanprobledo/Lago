@@ -9,53 +9,87 @@
 </head>
 <body>
     <header>
-        <img src="./imagenes/lago-isologo.png" alt="Isologotipo de Lago" class="isologotipo">
-        <nav>
-            <ul>
-                <li> <a href="index.html">Inicio</a> </a></li>
-                <li> <a href="./paginas/nosotros.html" >Nosotros</a></li>
-                <li> <a href="./paginas/soluciones.html">Soluciones</a></li>
-                <li> <a href="./paginas/integraciones.html">Integraciones</a></li>
-                <li> <a href="./paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">
+                            <img src="./imagenes/lago-carteles-logo.png" alt="Logotipo">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-6">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
     <main> 
         <div> 
             <img id="banner" src="./imagenes/banner-camioneta-inicio.png" alt="banner-inicio">
         </div>
-        <div> 
-            <div>
-                <h2 class="titulo-seccion-soluciones">SERVICIOS</h2>
+        <section id="soluciones"> 
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <h2 class="text-center">SERVICIOS</h2>
+                </div>
             </div>
-            <div class="seccion-soluciones">
-                <div class="card" style="width: 18rem;">
-                    <img src="./imagenes/lago-carteles-logo.png" class="card-img-top" alt="Isologotipo de la marca Lago Carteles.">
-                    <div class="card-body">
-                      <h5 class="card-title">Publicidad Física</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, exercitationem pariatur amet tenetur.</p>
-                      <a href="#" class="btn btn-primary">Más información</a>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <img src="./imagenes/lago-carteles-logo.png" class="card-img-top" alt="Isologotipo de la marca Lago Carteles.">
+                        <div class="card-body">
+                          <h5 class="card-title">Publicidad Física</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, exercitationem pariatur amet tenetur.</p>
+                          <a href="#" class="btn btn-primary">Más información</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./imagenes/spark-isologotipo.png" class="card-img-top" alt="Isologotipo de la marca Spark.">
-                    <div class="card-body">
-                      <h5 class="card-title">Publicidad Digital</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, exercitationem pariatur amet tenetur.</p>
-                      <a href="www.spark.com.ar" class="btn btn-primary">Visitar Sitio</a>
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <img src="./imagenes/spark-isologotipo.png" class="card-img-top" alt="Isologotipo de la marca Spark.">
+                        <div class="card-body">
+                          <h5 class="card-title">Publicidad Digital</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, exercitationem pariatur amet tenetur.</p>
+                          <a href="www.spark.com.ar" class="btn btn-primary">Visitar Sitio</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="./imagenes/colship_isologo.png" class="card-img-top" alt="Isologotipo de la marca Colship.">
-                    <div class="card-body">
-                      <h5 class="card-title">Logística</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, exercitationem pariatur amet tenetur.</p>
-                      <a href="www.colship.com.ar" class="btn btn-primary">Visitar Sitio</a>
+                <div class="col-12 col-lg-4">
+                    <div class="card">
+                        <img src="./imagenes/colship_isologo.png" class="card-img-top" alt="Isologotipo de la marca Colship.">
+                        <div class="card-body">
+                          <h5 class="card-title">Logística</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, exercitationem pariatur amet tenetur.</p>
+                          <a href="www.colship.com.ar" class="btn btn-primary">Visitar Sitio</a>
+                        </div>
                     </div>
                 </div>
             </div>
   
-        </div>
+        </section>
         <div class="seccion-contador">
             <!-- Acá va el contador creo que solo podré hacerlo estatico y no dinamico ya que eso sería con JavaScript -->
             <h4 class="numero-contador">+28</h4>
@@ -85,6 +119,7 @@
     -->
    </footer>
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
 </body>
 </html>
