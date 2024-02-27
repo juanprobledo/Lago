@@ -331,6 +331,28 @@ footer div {
         margin: 0;
     }
 
+    /* SOLUCIONES */
+    .contenido-soluciones {
+        margin: 20px;
+    }
+    .solucion {
+        margin: unset;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .solucion:last-of-type{
+        flex-direction: column;
+    }
+    .solucion img {
+        height: auto;
+        width: 70%;
+        object-fit: cover;
+    }
+    .solucion p {
+        padding: 0;
+    }
+
     /* FOOTER */
     .contenido-footer {
         display: flex;
