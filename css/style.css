@@ -140,7 +140,7 @@ body div .nuestras-marcas {
 .numero-contador{
     font-size: 60px;
     margin: 0px 20px;
-    }
+}
 
 .seccion-contador p {
     font-size: 30px;
@@ -281,7 +281,7 @@ footer div {
 
 /* MEDIA QUERY MOBILE*/ 
 
-/* Las Paginas 100% responsive son 'Index' (mediante grilla de bootstrap) y 'Soluciones'(utilzando el otro metodo), el resto esta en progreso */
+/* Las Paginas 100% responsive son 'Index' (mediante grilla de bootstrap), 'Soluciones' e 'Integraciones' (utilzando el otro metodo), el resto esta en progreso */
 
 @media (max-width:480px){
 
@@ -356,7 +356,27 @@ footer div {
     .solucion p {
         padding: 0;
     }
-
+    /* INTEGRACIONES */
+    .contenido-integracion {
+        height: 570px;
+    }
+    #integracion-imagen1 {
+        width: 150;
+        height: 150;
+        top: 50px;
+        left: 65px;
+    }
+    #integracion-imagen2 {
+        width: 150;
+        height: 150;
+        top: 130px;
+        left: -17px;
+    }
+    .resumen-integracion {
+        top: 178px;
+        left: 25px;
+        width: 300px;
+    }
     /* FOOTER */
     .contenido-footer {
         display: flex;
