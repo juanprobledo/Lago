@@ -9,16 +9,45 @@
 <body>
     <!-- HEADER -->
     <header>
-        <img src="../imagenes/lago-isologo.png" alt="Isologotipo de Lago" class="isologotipo">
-        <nav>
-            <ul>
-                <li> <a href="../index.html">Inicio</a> </a></li>
-                <li> <a href="../paginas/nosotros.html" >Nosotros</a></li>
-                <li> <a href="../paginas/soluciones.html">Soluciones</a></li>
-                <li> <a href="../paginas/integraciones.html">Integraciones</a></li>
-                <li> <a href="../paginas/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="./index.html">
+                            <img src="../imagenes/lago-carteles-logo.png" alt="Logotipo">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-6">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/soluciones.html">SOLUCIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/integraciones.html">INTEGRACIONES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/contacto.html">CONTACTO</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
     
     <!-- MAIN -->
@@ -49,9 +78,11 @@
             <img src="../imagenes/lago-isologo.png" alt="Isologotipo de Lago Carteles">
         </div>
         <div class="contenido-footer">
-            <p>Todos los derechos Reservados. Powered by <a href="www.spark.com.ar"> Spark</a></p>
-         </div>
-        <div class="contenido-footer">
+           <p>Todos los derechos Reservados. Powered by <a href="www.spark.com.ar">Spark</a></p>
+        </div>
+        <!-- Se comenta esta parte hasta resolver estilo final de footer
+
+            <div class="contenido-footer">
             <h3>Páginas</h3>
                 <ul>
                     <li> <a href="index.html">Inicio</a> </a></li>
@@ -61,7 +92,9 @@
                     <li> <a href="paginas/contacto.html">Contacto</a></li>
                 </ul>
         </div>
-    </footer>
+
+    -->
+   </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
