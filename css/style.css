@@ -260,3 +260,8 @@ footer div {
     margin: 4px 70px;
     padding-bottom: 40px;
 }
+
+/* MEDIA QUERY MOBILE*/
+@media (max-width:480px){
+    
+}
