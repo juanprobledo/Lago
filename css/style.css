@@ -246,14 +246,17 @@ body div .nuestras-marcas {
 
 
 /*FOOTER*/
-footer {background-color:azure
+footer {background-color:black;
 }   
 .contenido-footer {
     display: inline-block;}
 .contenido-footer a {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: white;
+}
+.contenido-footer p {
+    color: white;
 }
 
 footer div {
@@ -262,6 +265,17 @@ footer div {
 }
 
 /* MEDIA QUERY MOBILE*/
-@media (max-width:480px){
-    
+@media (max-width:480px){}
+.seccion-soluciones {
+    flex-direction: column;
+    }
+.contenido-nosotros {
+    flex-direction: column;
+    justify-content: unset;
+    margin: unset;
+}
+.contenido-nosotros p {
+    text-align: center;
+    max-width: 400px;
+    margin-bottom: unset;
 }
