@@ -264,7 +264,15 @@ footer div {
 
 /* MEDIA QUERY MOBILE*/
 @media (max-width:480px){
+
     /* HEADER */
+    .row{
+        width: 100%;
+    }
+    header{
+       padding: 20px;
+
+    }
     .navbar-brand {
         margin: 0;
     }    
