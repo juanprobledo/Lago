@@ -37,8 +37,9 @@ h1,h2,h3,h4,h5,h6 {
 }
 header {
     background-color:black;
-    height: 150px;
+    height: 100px;
     width: 100%;
+    padding: 20px;
 }
 .navbar{
     --bs-navbar-active-color: blue;
@@ -48,8 +49,8 @@ header {
     --bs-navbar-toggler-icon-color: blue;
 }
 .navbar-brand img {
-    height: 75px;
-    width: 250px;
+    height: 60px;
+    width: 200px;
     object-fit: cover;
 }
 .bg-body-tertiary {
@@ -69,7 +70,13 @@ header {
     background-color: blue;
 }
 .navbar-toggler:hover{
+    position: absolute;
+    right: 0; /* Intentando que el menu desplegable se quede a la derecha*/
     z-index: 99999999; /* Intentado que el banner quede por detras del menu desplegable */
+}
+.navbar-toggler:active{
+    position: absolute;
+    right: 0;
 }
 
 
@@ -89,7 +96,17 @@ header {
 h2{
     margin: 20px;
 } 
-
+.col-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+}
+.col-lg-4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .card {
     display: flex;
     flex-direction: column;
@@ -270,7 +287,8 @@ footer div {
         width: 100%;
     }
     header{
-       padding: 20px;
+       padding: 0 20px;
+       height: 110px;
 
     }
     .navbar-brand {
@@ -284,11 +302,34 @@ footer div {
     }
     .navbar-nav .nav-link{
     font-size: 16px;
+    width: fit-content;
     }
 
-    /* INDEX */
+    /* NOSOTROS */
+    .contenido-nosotros {
+        flex-direction: column;
+        margin: unset;
+    }
+    .contenido-nosotros img {
+        height: auto;
+        width: 350px;
+    }
+    .contenido-nosotros p{
+        width: 80%;
+    }
+    .seccion-contador {
+        margin: 10px;
+        flex-direction: column;
+    }
+    .numero-contador{
+        font-size: 50px;
+        margin: unset;
+        }
     
-
+    .seccion-contador p {
+        font-size: 20px;
+        margin: 0;
+    }
 
     /* FOOTER */
     .contenido-footer {
