@@ -286,7 +286,7 @@ footer div {
 
 /* MEDIA QUERY MOBILE*/ 
 
-/* Las Paginas 100% responsive son 'Index' (mediante grilla de bootstrap), 'Soluciones', 'Integraciones' y Contacto (utilzando el otro metodo), el resto esta en progreso */
+/* Las Paginas 100% responsive son 'Index' (mediante grilla de bootstrap); 'Soluciones', 'Integraciones' y Contacto (utilzando el otro metodo), el resto esta en progreso */
 
 @media (max-width:480px){
 
