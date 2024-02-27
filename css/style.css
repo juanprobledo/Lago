@@ -320,10 +320,11 @@ footer div {
     }
     .contenido-nosotros img {
         height: auto;
-        width: 350px;
+        width: 100%;
+        margin-bottom: 20px;
     }
     .contenido-nosotros p{
-        width: 80%;
+        width: 90%;
     }
     .seccion-contador {
         margin: 10px;
