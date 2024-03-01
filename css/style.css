@@ -127,13 +127,9 @@ h2{
 .btn-primary{
     --bs-btn-bg: blue;
     --bs-btn-border-color: blue;
+    --bs-btn-hover-bg: white;
+    --bs-btn-hover-color:blue;
 }
-.btn-primary:hover {
-    --bs-btn-color: blue;
-    --bs-btn-bg: white;
-    --bs-btn-border-color: blue;
-}
-
 body div .nuestras-marcas {
     display: inline-block;
     margin-left: 100px;
