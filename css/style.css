@@ -108,6 +108,7 @@ h2{
     justify-content: center;
 }
 .card {
+    font-family: 'montserrat', sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,6 +124,16 @@ h2{
     object-fit: contain;
     padding: 20px;
 }
+.btn-primary{
+    --bs-btn-bg: blue;
+    --bs-btn-border-color: blue;
+}
+.btn-primary:hover {
+    --bs-btn-color: blue;
+    --bs-btn-bg: white;
+    --bs-btn-border-color: blue;
+}
+
 body div .nuestras-marcas {
     display: inline-block;
     margin-left: 100px;
