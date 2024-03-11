@@ -1,0 +1,56 @@
+header {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    padding: 20px;
+}    
+    .container-fluid {
+        margin: 0;
+        padding: 0;
+        justify-content: space-between;
+        align-items: center;
+        --bs-bg-opacity: 0;
+        background-color: black;
+    }
+
+    .navbar {
+        --bs-navbar-active-color: blue;
+        --bs-navbar-active-size: 16px;
+        --bs-navbar-color: blue;
+        --bs-navbar-toggler-border-color: blue;
+        --bs-navbar-toggler-icon-color: blue;
+        padding:0;
+
+        &-brand img {
+            height: 60px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        &-nav .nav-link {
+            font-family: 'montserrat', sans-serif;
+            font-size: 22px;
+            color: blue;
+
+            &:hover {
+                font-family: 'montserrat', sans-serif;
+                color: black;
+                background-color: blue;
+            }
+        }
+
+        &-toggler-icon {
+            background-color: blue;
+        }
+
+        &-toggler:hover {
+            position: absolute;
+            right: 0;
+            z-index: 99999999;
+        }
+
+        &-toggler:active {
+            position: absolute;
+            right: 0;
+        }
+    }

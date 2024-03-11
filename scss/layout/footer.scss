@@ -1,0 +1,23 @@
+footer {
+    background-color: black;
+
+    .contenido-footer {
+        display: inline-block;
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: white;
+        }
+
+        p {
+            font-size: 20px;
+            color: white;
+        }
+    }
+
+    div {
+        margin: 4px 70px;
+        padding-bottom: 40px;
+    }
+}

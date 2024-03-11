@@ -1,80 +1,11 @@
-/* FUENTES DEL SITIO y CFG BASE */
-@font-face {
-    font-family: 'montserrat', sans-serif;
-        src:url(../recursos/Montserrat/Montserrat-Italic-VariableFont_wght.ttf)
-            url(../recursos/Montserrat/Montserrat-VariableFont_wght.ttf);
+/* General */
+@import './general/reset.scss';
+@import './general/variables.scss';
 
-    font-family: 'roboto', sans-serif;
-        src:url(../recursos/Roboto/Roboto-Black.ttf)
-            url(../recursos/Roboto/Roboto-Light.ttf)
-            url(../recursos/Roboto/Roboto-Medium.ttf);
-}
+/* Layout */
+@import './layout/header.scss';
+@import './layout/footer.scss';
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/* HEADER */
-header {
-    background-color: black;
-    height: 100px;
-    width: 100%;
-    padding: 20px;
-
-    .col-6 {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        padding: 0;
-    }
-    
-    .container-fluid {
-        margin: 0;
-        padding: 0;
-    }
-
-    .navbar {
-        --bs-navbar-active-color: blue;
-        --bs-navbar-active-size: 16px;
-        --bs-navbar-color: blue;
-        --bs-navbar-toggler-border-color: blue;
-        --bs-navbar-toggler-icon-color: blue;
-
-        &-brand img {
-            height: 60px;
-            width: 200px;
-            object-fit: cover;
-        }
-
-        &-nav .nav-link {
-            font-family: 'montserrat', sans-serif;
-            font-size: 22px;
-            color: blue;
-
-            &:hover {
-                font-family: 'montserrat', sans-serif;
-                color: black;
-                background-color: blue;
-            }
-        }
-
-        &-toggler-icon {
-            background-color: blue;
-        }
-
-        &-toggler:hover {
-            position: absolute;
-            right: 0;
-            z-index: 99999999;
-        }
-
-        &-toggler:active {
-            position: absolute;
-            right: 0;
-        }
-    }
-}
 /* BODY */
 body {
     font-family: 'roboto', sans-serif;
@@ -286,29 +217,7 @@ body {
     }
 }
 /* FOOTER */
-footer {
-    background-color: black;
 
-    .contenido-footer {
-        display: inline-block;
-
-        a {
-            text-decoration: none;
-            font-weight: bold;
-            color: white;
-        }
-
-        p {
-            font-size: 20px;
-            color: white;
-        }
-    }
-
-    div {
-        margin: 4px 70px;
-        padding-bottom: 40px;
-    }
-}
 /* MEDIA QUERY */
 // Media Query para pantallas hasta 480px
 @media (max-width: 480px) {
