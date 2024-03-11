@@ -1,3 +1,10 @@
+/* FUENTES DEL SITIO y CFG BASE */
+@font-face {
+  font-family: "montserrat", sans-serif;
+  src: url(../recursos/Montserrat/Montserrat-Italic-VariableFont_wght.ttf) url(../recursos/Montserrat/Montserrat-VariableFont_wght.ttf);
+  font-family: "roboto", sans-serif;
+  src: url(../recursos/Roboto/Roboto-Black.ttf) url(../recursos/Roboto/Roboto-Light.ttf) url(../recursos/Roboto/Roboto-Medium.ttf);
+}
 * {
   margin: 0;
   padding: 0;
@@ -232,6 +239,157 @@ body .contenido-contacto .iframe-ubicacion {
   height: 450px;
   width: auto;
   margin: 20px;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+}
+footer .contenido-footer {
+  display: inline-block;
+}
+footer .contenido-footer a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+footer .contenido-footer p {
+  font-size: 20px;
+  color: white;
+}
+footer div {
+  margin: 4px 70px;
+  padding-bottom: 40px;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 480px) {
+  /* Estilos para el HEADER */
+  .row {
+    width: 100%;
+  }
+  header {
+    padding: 0 20px;
+    height: 110px;
+  }
+  header .navbar-brand {
+    margin: 0;
+  }
+  header .navbar-brand img {
+    height: 75px;
+    width: 200px;
+    padding: unset;
+    margin: 0;
+  }
+  header .navbar-nav .nav-link {
+    font-size: 16px;
+    width: fit-content;
+  }
+  body {
+    /* NOSOTROS */
+    /* SOLUCIONES */
+    /* INTEGRACIONES */
+    /* CONTACTO */
+  }
+  body .contenido-nosotros {
+    flex-direction: column;
+    margin: unset;
+  }
+  body .contenido-nosotros img {
+    height: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  body .contenido-nosotros p {
+    width: 90%;
+  }
+  body .seccion-contador {
+    margin: 10px;
+    flex-direction: column;
+  }
+  body .seccion-contador .numero-contador {
+    font-size: 50px;
+    margin: unset;
+  }
+  body .seccion-contador p {
+    font-size: 20px;
+    margin: 0;
+  }
+  body .contenido-soluciones {
+    margin: 20px;
+  }
+  body .contenido-soluciones .solucion {
+    margin: unset;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  body .contenido-soluciones .solucion:last-of-type {
+    flex-direction: column;
+  }
+  body .contenido-soluciones .solucion img {
+    height: auto;
+    width: 70%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  body .contenido-soluciones .solucion p {
+    padding: 0;
+  }
+  body .contenido-integracion {
+    height: 570px;
+  }
+  body .contenido-integracion #integracion-imagen1 {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 50px;
+    left: 65px;
+  }
+  body .contenido-integracion #integracion-imagen2 {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: 130px;
+    left: -17px;
+  }
+  body .contenido-integracion .resumen-integracion {
+    top: 178px;
+    left: 25px;
+    width: 300px;
+  }
+  body .contacto-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+  body .contacto-container .contacto-subcontainer-item {
+    margin: 10px;
+  }
+  body .contacto-container .contacto-subcontainer-item img {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+  }
+  body .contacto-container .iframe-ubicacion-container {
+    margin-bottom: 30px;
+  }
+  footer .contenido-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0px 20px;
+  }
+  footer .contenido-footer img {
+    height: 150px;
+    width: auto;
+    padding: 20px 0;
+  }
+  footer .contenido-footer p {
+    text-align: center;
+    font-size: 18px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
