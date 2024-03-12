@@ -1,5 +1,5 @@
 header {
-    background-color: black;
+    background-color: $color-primario;
     height: 100px;
     width: 100%;
     padding: 20px;
@@ -10,15 +10,15 @@ header {
         justify-content: space-between;
         align-items: center;
         --bs-bg-opacity: 0;
-        background-color: black;
+        background-color: $color-primario;
     }
 
     .navbar {
-        --bs-navbar-active-color: blue;
+        --bs-navbar-active-color: $color-secundario;
         --bs-navbar-active-size: 16px;
-        --bs-navbar-color: blue;
-        --bs-navbar-toggler-border-color: blue;
-        --bs-navbar-toggler-icon-color: blue;
+        --bs-navbar-color: $color-secundario;
+        --bs-navbar-toggler-border-color: $color-secundario;
+        --bs-navbar-toggler-icon-color: $color-secundario;
         padding:0;
 
         &-brand img {
@@ -30,17 +30,17 @@ header {
         &-nav .nav-link {
             font-family: 'montserrat', sans-serif;
             font-size: 22px;
-            color: blue;
+            color: $color-secundario;
 
             &:hover {
                 font-family: 'montserrat', sans-serif;
-                color: black;
-                background-color: blue;
+                color: $color-primario;
+                background-color: $color-secundario;
             }
         }
 
         &-toggler-icon {
-            background-color: blue;
+            background-color: $color-secundario;
         }
 
         &-toggler:hover {
