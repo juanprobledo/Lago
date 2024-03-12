@@ -1,9 +1,28 @@
 header {
     background-color: $color-primario;
-    height: 100px;
     width: 100%;
     padding: 20px;
-}    
+        @include media-query-mobile(){
+            padding: 0 20px;
+            height: 110px;
+        }
+    .navbar-brand {
+            margin: 0;
+
+            img {
+                height: 75px;
+                width: 200px;
+                padding: unset;
+                margin: 0;
+            }
+    }
+        
+        .navbar-nav .nav-link {
+            font-size: 16px;
+            width: fit-content;
+        }
+    }
+    
     .container-fluid {
         margin: 0;
         padding: 0;
@@ -53,4 +72,4 @@ header {
             position: absolute;
             right: 0;
         }
-    }
+}

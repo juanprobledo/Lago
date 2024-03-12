@@ -1,3 +1,6 @@
+/* MEDIA QUERY */
+@import './mediaqueries/mobile.scss';
+
 /* General */
 @import './general/reset.scss';
 @import './general/variables.scss';
@@ -6,6 +9,3 @@
 @import './layout/header.scss';
 @import './layout/footer.scss';
 @import './layout/body.scss';
-
-/* MEDIA QUERY */
-@import './mediaqueries/mobile.scss';

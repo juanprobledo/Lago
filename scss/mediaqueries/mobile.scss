@@ -1,31 +1,20 @@
+@mixin media-query-mobile{
+    @media (max-width: 480px){
+        @content;
+    }
+}
+
+
+
+/* 
 @media (max-width: 480px) {
-    /* HEADER */
+    /* HEADER 
        .row {
            width: 100%;
        }
    
-       header {
-           padding: 0 20px;
-           height: 110px;
-   
-           .navbar-brand {
-               margin: 0;
-   
-               img {
-                   height: 75px;
-                   width: 200px;
-                   padding: unset;
-                   margin: 0;
-               }
-           }
-   
-           .navbar-nav .nav-link {
-               font-size: 16px;
-               width: fit-content;
-           }
-       }
-       body {
-       /* NOSOTROS */
+      BODY
+       /* NOSOTROS 
        .contenido-nosotros {
            flex-direction: column;
            margin: unset;
@@ -56,7 +45,7 @@
            }
        }
    
-       /* SOLUCIONES */
+       /* SOLUCIONES 
        .contenido-soluciones {
            margin: 20px;
    
@@ -83,7 +72,7 @@
            }
        }
    
-       /* INTEGRACIONES */
+       /* INTEGRACIONES /
        .contenido-integracion {
            height: 570px;
    
@@ -110,7 +99,7 @@
            }
        }
    
-       /* CONTACTO */
+       /* CONTACTO 
        .contacto-container {
            display: flex;
            flex-direction: column;
@@ -151,4 +140,4 @@
                }
            }
        }
-   }
+   } */
