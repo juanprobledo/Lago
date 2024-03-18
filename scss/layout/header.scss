@@ -7,20 +7,20 @@ header {
         @include media-query-mobile(){
         }
     .navbar-brand {
-            margin: 0;
+        margin: 0;
 
-            img {
-                height: 75px;
+        img {
+            height: 75px;
+            width: 200px;
+            padding: unset;
+            margin: 0;
+            @include media-query-mobile(){
+                 height: 75px;
                 width: 200px;
                 padding: unset;
                 margin: 0;
-                @include media-query-mobile(){
-                    height: 75px;
-                    width: 200px;
-                    padding: unset;
-                    margin: 0;
-                }
             }
+        }
     }
         
         .navbar-nav .nav-link {

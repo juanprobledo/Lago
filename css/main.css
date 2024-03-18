@@ -237,6 +237,8 @@ footer div {
 body {
   font-family: "roboto", sans-serif;
   font-size: 16px;
+  /*index*/
+  /*nosotros*/
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Montserrat", sans-serif;
@@ -316,37 +318,63 @@ body .contenido-nosotros {
   align-items: center;
   margin: 40px;
 }
+@media (max-width: 480px) {
+  body .contenido-nosotros {
+    flex-direction: column;
+    margin: unset;
+  }
+}
 body .contenido-nosotros img {
   height: 400px;
   width: auto;
 }
-body .contenido-nosotros p {
-  width: 500px;
-}
 @media (max-width: 480px) {
-  body .contenido-nosotros .contenido-nosotros {
-    flex-direction: column;
-    margin: unset;
-  }
-  body .contenido-nosotros .contenido-nosotros img {
+  body .contenido-nosotros img {
+    margin-bottom: 20px;
     height: auto;
     width: 100%;
-    margin-bottom: 20px;
   }
-  body .contenido-nosotros .contenido-nosotros p {
+}
+body .contenido-nosotros p {
+  width: 500px;
+  font-size: 22px;
+}
+@media (max-width: 480px) {
+  body .contenido-nosotros p {
     width: 90%;
+    font-size: 20px;
   }
-  body .contenido-nosotros .contenido-nosotros .seccion-contador {
-    margin: 10px;
+}
+body .seccion-contador {
+  margin: 10px;
+  flex-direction: row;
+}
+@media (max-width: 480px) {
+  body .seccion-contador {
     flex-direction: column;
-  }
-  body .contenido-nosotros .contenido-nosotros .seccion-contador .numero-contador {
-    font-size: 50px;
     margin: unset;
   }
-  body .contenido-nosotros .contenido-nosotros .seccion-contador p {
+}
+body .seccion-contador .seccion-individual-contador {
+  margin: 20px;
+}
+body .seccion-contador .numero-contador {
+  font-size: 50px;
+  margin: unset;
+}
+@media (max-width: 480px) {
+  body .seccion-contador .numero-contador {
+    font-size: 42px;
+  }
+}
+body .seccion-contador p {
+  font-size: 22px;
+  margin: 0;
+}
+@media (max-width: 480px) {
+  body .seccion-contador p {
     font-size: 20px;
-    margin: 0;
+    text-align: center;
   }
 }
 body .contenido-soluciones {
