@@ -256,9 +256,15 @@ body {
     .contenido-contacto {
         display: grid;
         grid-template-columns: 1fr;
+        @include media-query-mobile(){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
         .subtitulo-contacto {
             text-align: center;
+            margin-top: 20px;
         }
 
         .redes-mail {
@@ -272,6 +278,10 @@ body {
             flex-direction: row;
             justify-content: space-evenly;
             padding: 30px;
+            @include media-query-mobile(){
+                flex-direction: column;
+                justify-content: center;
+            }
         }
 
         .container-nivel2 {
