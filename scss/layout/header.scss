@@ -1,10 +1,10 @@
 header {
     background-color: $color-primario;
+    height:auto;
     width: 100%;
     padding: 20px;
+    justify-content: space-evenly;
         @include media-query-mobile(){
-            padding: 0 20px;
-            height: 110px;
         }
     .navbar-brand {
             margin: 0;
@@ -14,12 +14,22 @@ header {
                 width: 200px;
                 padding: unset;
                 margin: 0;
+                @include media-query-mobile(){
+                    height: 75px;
+                    width: 200px;
+                    padding: unset;
+                    margin: 0;
+                }
             }
     }
         
         .navbar-nav .nav-link {
             font-size: 16px;
             width: fit-content;
+            @include media-query-mobile(){
+                font-size: 16px;
+                width: fit-content;
+            }
         }
     }
     
