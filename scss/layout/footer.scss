@@ -3,6 +3,14 @@ footer {
 
     .contenido-footer {
         display: inline-block;
+        @include media-query-mobile(){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        margin: 0px;
+        }
 
         a {
             text-decoration: none;
@@ -13,7 +21,11 @@ footer {
         p {
             font-size: 20px;
             color: $color-terceario;
+            @include media-query-mobile(){
+            padding:unset;
+            }
         }
+        
     }
 
     div {

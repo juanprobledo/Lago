@@ -84,7 +84,8 @@ body {
             margin: unset;
         }
     }
-/*nosotros*/
+
+    /*nosotros*/
     .contenido-nosotros {
         display: flex;
         flex-direction: row;
@@ -131,6 +132,7 @@ body {
                 margin: unset;
                 @include media-query-mobile (){
                     font-size: 42px;
+                    text-align: center;
                 }
             }
                     
@@ -143,63 +145,62 @@ body {
                 }
             }
         }
-    
 
-            
-
+    /*soluciones*/
     .contenido-soluciones {
         margin: 20px 50px;
         display: flex;
         flex-direction: column;
+        @include media-query-mobile(){
+            margin: 20px;
+        }  
 
         .solucion {
             margin: 40px;
             display: flex;
             flex-direction: row;
+            align-items: center;
+            @include media-query-mobile () {
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                margin: unset;
+            }
+        
 
             img {
-                height: 200px;
-                width: 50%;
+                height: 150px;
+                width: auto;
                 object-fit: cover;
             }
 
             p {
-                padding: 50px 100px;
+                padding: 0px 90px;
+                font-size: 20px;
+                @include media-query-mobile (){
+                    padding: 20px;
+                    font-size: 20px;
+                }
             }
 
             &:last-of-type {
-                flex-direction: column;
+                flex-direction: row-reverse;
+                @include media-query-mobile (){
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            
                 p {
                     padding-left: 0px;
                 }
                 img {
                     padding-right: 100px;
-                }
-            }
-            @include media-query-mobile(){
-                .contenido-soluciones {
-                    margin: 20px;
-            
-                    .solucion {
-                        margin: unset;
-                        flex-direction: column;
-                        flex-wrap: wrap;
-                        align-items: center;
-            
-                        &:last-of-type {
-                            flex-direction: column;
-                        }
-            
-                        img {
-                            height: auto;
-                            width: 70%;
-                            object-fit: cover;
-                            margin-bottom: 20px;
-                        }
-            
-                        p {
-                            padding: 0;
-                        }
+                    @include media-query-mobile(){
+                        height: 150px;
+                        width: auto;
+                        object-fit: cover;
                     }
                 }
             }
