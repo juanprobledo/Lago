@@ -353,6 +353,7 @@ body .contenido-soluciones .solucion p {
 @media (max-width: 480px) {
   body .contenido-soluciones .solucion p {
     padding: 20px;
+    margin: 0;
     font-size: 20px;
   }
 }
@@ -368,6 +369,11 @@ body .contenido-soluciones .solucion:last-of-type {
 body .contenido-soluciones .solucion:last-of-type p {
   padding-left: 0px;
 }
+@media (max-width: 480px) {
+  body .contenido-soluciones .solucion:last-of-type p {
+    padding: 20px;
+  }
+}
 body .contenido-soluciones .solucion:last-of-type img {
   padding-right: 100px;
 }
@@ -376,6 +382,7 @@ body .contenido-soluciones .solucion:last-of-type img {
     height: 150px;
     width: auto;
     object-fit: cover;
+    padding-right: unset;
   }
 }
 body .contenido-integracion {

@@ -186,6 +186,7 @@ body {
                 font-size: 20px;
                 @include media-query-mobile (){
                     padding: 20px;
+                    margin: 0;
                     font-size: 20px;
                 }
             }
@@ -195,9 +196,11 @@ body {
                     justify-content: center;
                     align-items: center;
                 }
-            
                 p {
                     padding-left: 0px;
+                    @include media-query-mobile (){
+                        padding: 20px;
+                    }
                 }
                 img {
                     padding-right: 100px;
@@ -205,6 +208,7 @@ body {
                         height: 150px;
                         width: auto;
                         object-fit: cover;
+                        padding-right: unset;
                     }
                 }
             }
