@@ -22,8 +22,10 @@ header {
             }
         }
     }
-        
-        .navbar-nav .nav-link {
+        .navbar-expand-lg .navbar-collapse {
+            justify-content: end;
+        }
+            .nav-link {
             font-size: 16px;
             width: fit-content;
             @include media-query-mobile(){
@@ -43,9 +45,9 @@ header {
     }
 
     .navbar {
-        --bs-navbar-active-color: $color-secundario;
+        --bs-navbar-active-color: $color-terceario;
         --bs-navbar-active-size: 16px;
-        --bs-navbar-color: $color-secundario;
+        --bs-navbar-color: $color-terceario;
         --bs-navbar-toggler-border-color: $color-secundario;
         --bs-navbar-toggler-icon-color: $color-secundario;
         padding:0;
@@ -59,7 +61,8 @@ header {
         &-nav .nav-link {
             font-family: 'montserrat', sans-serif;
             font-size: 22px;
-            color: $color-secundario;
+            color: $color-terceario;
+            &:first-of-type {color: $color-terceario }
 
             &:hover {
                 font-family: 'montserrat', sans-serif;

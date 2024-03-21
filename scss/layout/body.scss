@@ -16,16 +16,28 @@ body {
         object-fit: cover;
         overflow: hidden;
         z-index: 1;
-
-        h2 {
-            margin: 20px;
-        }
+    }
+    .titulo-index {
+        position: absolute;
+        top: 253px;
+        left: 573px;
+        z-index: 2;
+        text-align: left;
+        width: 690px;
+        color: $color-terceario;
+        text-shadow: 2px 2px 4px black;
+    }
+    h2 {
+        margin: 20px;
     }
 
     .col-8 {
         display: flex;
         flex-direction: column;
         align-items: end;
+    }
+    .row {
+        --bs-gutter-x: 0;
     }
 
     .col-lg-4 {
