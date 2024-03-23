@@ -333,6 +333,24 @@ body {
                 flex-direction: column;
                 justify-content: center;
             }
+            .iframe-ubicacion-container{
+                position: relative;
+                top: 24px;
+                height: 250;
+                width: 600;
+                @include media-query-mobile (){
+                    height: unset;
+                    width: unset;
+                }
+                .ifram-ubicacion{
+                    height: 250;
+                    width: 600;
+                    @include media-query-mobile (){
+                        height: unset;
+                        width: unset;
+                    }
+                }
+            }
         }
         .container-nivel2 {
             display: flex;
@@ -350,9 +368,5 @@ body {
                 width: 50px;
                 margin-right: 20px;
             }
-        }
-        .iframe-ubicacion-container{
-            position: relative;
-            top: 24px;
         }
     }
