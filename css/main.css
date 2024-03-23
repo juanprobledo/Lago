@@ -109,6 +109,8 @@ header .nav-link {
 
 footer {
   background-color: #000;
+  background-color: #000;
+  width: 100%;
 }
 footer .contenido-footer {
   display: inline-block;
@@ -487,6 +489,20 @@ h2 {
 }
 
 /*contacto*/
+.contacto-p {
+  font-size: 26px;
+  color: #0000FF;
+  width: 800px;
+  margin: 10 70;
+}
+@media (max-width: 480px) {
+  .contacto-p {
+    font-size: 20;
+    width: 350px;
+    margin: 0px 15px;
+  }
+}
+
 .contenido-contacto {
   display: grid;
   grid-template-columns: 1fr;
