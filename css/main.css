@@ -145,14 +145,19 @@ footer div {
 body {
   font-family: "roboto", sans-serif;
   font-size: 16px;
-  /*index*/
-  /*nosotros*/
 }
 body h1, body h2, body h3, body h4, body h5, body h6 {
   font-family: "Montserrat", sans-serif;
   color: #0000FF;
 }
-body #banner {
+body .h1-paginas {
+  text-align: left;
+  color: #0000FF;
+  margin: 20px;
+}
+
+/*index*/
+#banner {
   position: relative;
   top: 0px;
   left: 0px;
@@ -162,7 +167,8 @@ body #banner {
   overflow: hidden;
   z-index: 1;
 }
-body .titulo-index {
+
+.titulo-index {
   position: absolute;
   top: 253px;
   left: 573px;
@@ -173,7 +179,7 @@ body .titulo-index {
   text-shadow: 2px 2px 4px black;
 }
 @media (max-width: 480px) {
-  body .titulo-index {
+  .titulo-index {
     position: relative;
     top: -412px;
     left: 28px;
@@ -181,23 +187,33 @@ body .titulo-index {
     width: 350px;
   }
 }
-body h2 {
+
+h2 {
   margin: 20 20 0 20;
 }
-body .col-8 {
+@media (max-width: 480px) {
+  h2 {
+    margin-top: unset;
+  }
+}
+
+.col-8 {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
-body .row {
+
+.row {
   --bs-gutter-x: 0;
 }
-body .col-lg-4 {
+
+.col-lg-4 {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
-body .card {
+
+.card {
   font-family: "montserrat", sans-serif;
   display: flex;
   flex-direction: column;
@@ -208,23 +224,26 @@ body .card {
   width: 350px;
   overflow: hidden;
 }
-body .card .card-img-top {
+.card .card-img-top {
   height: 300px;
   width: 300px;
   object-fit: contain;
   padding: 20px;
 }
-body .btn-primary {
+
+.btn-primary {
   --bs-btn-bg: $color-secundario;
   --bs-btn-border-color: $color-secundario;
   --bs-btn-hover-bg: $color-terceario;
   --bs-btn-hover-color: $color-secundario;
 }
-body .nuestras-marcas {
+
+.nuestras-marcas {
   display: inline-block;
   margin-left: 100px;
 }
-body .seccion-contador {
+
+.index-seccion-contador {
   font-weight: bold;
   margin: 10px;
   display: flex;
@@ -232,27 +251,23 @@ body .seccion-contador {
   justify-content: center;
   align-items: center;
 }
-body .seccion-contador .numero-contador {
+.index-seccion-contador .index-numero-contador {
   font-size: 60px;
   margin: 0px 20px;
 }
-body .seccion-contador .p-contador {
+.index-seccion-contador .index-p-contador {
   font-size: 34px;
   color: #0000FF;
   margin-left: 20px;
 }
 @media (max-width: 480px) {
-  body .seccion-contador .p-contador {
+  .index-seccion-contador .index-p-contador {
     font-size: 24px;
-    margin: 0 0 20 0;
+    margin: unset;
   }
 }
-body #NosotrosTitulo {
-  text-align: left;
-  color: #0000FF;
-  margin: 20px 0px;
-}
 
+/*nosotros*/
 .contenido-nosotros {
   display: flex;
   flex-direction: row;
@@ -279,7 +294,7 @@ body #NosotrosTitulo {
 }
 .contenido-nosotros p {
   width: 500px;
-  font-size: 22px;
+  font-size: 26px;
 }
 @media (max-width: 480px) {
   .contenido-nosotros p {
@@ -288,46 +303,49 @@ body #NosotrosTitulo {
   }
 }
 
-.seccion-contador {
+.nosotros-seccion-contador {
   margin: 10px;
+  display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 480px) {
-  .seccion-contador {
+  .nosotros-seccion-contador {
     flex-direction: column;
   }
 }
-.seccion-contador .seccion-individual-contador {
+.nosotros-seccion-contador .nosotros-seccion-individual-contador {
   margin-right: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 @media (max-width: 480px) {
-  .seccion-contador .seccion-individual-contador {
+  .nosotros-seccion-contador .nosotros-seccion-individual-contador {
     margin: 0 0 20 0;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
-.seccion-contador .numero-contador {
+.nosotros-seccion-contador .nosotros-numero-contador {
   font-size: 50px;
   margin-right: 20px;
 }
 @media (max-width: 480px) {
-  .seccion-contador .numero-contador {
+  .nosotros-seccion-contador .nosotros-numero-contador {
     font-size: 42px;
     text-align: center;
   }
 }
-.seccion-contador p {
-  font-size: 22px;
+.nosotros-seccion-contador .nosotros-p-contador {
+  font-size: 32px;
   color: #0000FF;
   margin: 0;
 }
 @media (max-width: 480px) {
-  .seccion-contador p {
+  .nosotros-seccion-contador .nosotros-p-contador {
     font-size: 20px;
     text-align: center;
   }
@@ -341,7 +359,7 @@ body #NosotrosTitulo {
 }
 @media (max-width: 480px) {
   .contenido-soluciones {
-    margin: 20px;
+    margin: 0 20 20 20;
   }
 }
 .contenido-soluciones .solucion {
@@ -366,7 +384,7 @@ body #NosotrosTitulo {
 }
 .contenido-soluciones .solucion p {
   padding: 0px 90px;
-  font-size: 20px;
+  font-size: 26px;
 }
 @media (max-width: 480px) {
   .contenido-soluciones .solucion p {
@@ -404,8 +422,14 @@ body #NosotrosTitulo {
   }
 }
 
+/*integraciones*/
 .contenido-integracion {
   height: 700px;
+}
+@media (max-width: 480px) {
+  .contenido-integracion {
+    height: 630px;
+  }
 }
 .contenido-integracion #integracion-imagen1 {
   width: 400;
@@ -418,7 +442,7 @@ body #NosotrosTitulo {
   .contenido-integracion #integracion-imagen1 {
     width: 150;
     height: auto;
-    top: 70px;
+    top: 0px;
     left: 57px;
   }
 }
@@ -433,7 +457,7 @@ body #NosotrosTitulo {
   .contenido-integracion #integracion-imagen2 {
     width: 150px;
     height: auto;
-    top: 150px;
+    top: 80px;
     left: 0px;
   }
 }
@@ -446,13 +470,23 @@ body #NosotrosTitulo {
 @media (max-width: 480px) {
   .contenido-integracion .resumen-integracion {
     position: relative;
-    top: 220px;
+    top: 110px;
     left: 30px;
     width: 320px;
     font-size: 20px;
   }
 }
+.contenido-integracion .resumen-integracion p {
+  font-size: 26px;
+  margin: unset;
+}
+@media (max-width: 480px) {
+  .contenido-integracion .resumen-integracion p {
+    font-size: 22px;
+  }
+}
 
+/*contacto*/
 .contenido-contacto {
   display: grid;
   grid-template-columns: 1fr;
@@ -465,8 +499,15 @@ body #NosotrosTitulo {
   }
 }
 .contenido-contacto .subtitulo-contacto {
+  display: flex;
+  align-items: center;
   text-align: center;
   margin-top: 20px;
+}
+@media (max-width: 480px) {
+  .contenido-contacto .subtitulo-contacto {
+    margin: 20px;
+  }
 }
 .contenido-contacto .redes-mail {
   display: flex;
@@ -477,7 +518,8 @@ body #NosotrosTitulo {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 30px;
+  padding: 0 30px;
+  margin: 30px 0;
 }
 @media (max-width: 480px) {
   .contenido-contacto .contacto-container {
@@ -492,7 +534,7 @@ body #NosotrosTitulo {
   align-items: start;
 }
 .contenido-contacto .contacto-subcontainer-item {
-  margin: 30px;
+  margin: 10 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -502,10 +544,9 @@ body #NosotrosTitulo {
   width: 50px;
   margin-right: 20px;
 }
-.contenido-contacto .iframe-ubicacion {
-  height: 450px;
-  width: auto;
-  margin: 20px;
+.contenido-contacto .iframe-ubicacion-container {
+  position: relative;
+  top: 24px;
 }
 
 /*# sourceMappingURL=main.css.map */
